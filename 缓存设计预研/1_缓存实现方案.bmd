@@ -31,7 +31,7 @@
         <picture_thumb_size>100, 100</picture_thumb_size>
       </style>
       <nodes>
-        <node id="1" text="缓存系统实现" x="441" y="377" width="103" height="42" text_b="12, 12, 79, 18">
+        <node id="1" text="缓存系统实现" x="550" y="377" width="103" height="42" text_b="12, 12, 79, 18">
           <style>
             <back_color>Silver</back_color>
             <fore_color>Black</fore_color>
@@ -39,117 +39,187 @@
             <padding>12</padding>
           </style>
           <nodes>
-            <node id="2" text="自定义" x="315" y="347" width="46" height="22" text_b="2, 2, 42, 18" fold_btn_b="301, 352, 13, 13">
+            <node id="2" text="自定义" x="424" y="331" width="46" height="22" text_b="2, 2, 42, 18" fold_btn_b="410, 336, 13, 13">
               <nodes>
-                <node id="9" text="考虑" x="202" y="347" width="33" height="22" text_b="2, 2, 29, 18" fold_btn_b="188, 352, 13, 13">
+                <node id="9" text="考虑" x="311" y="331" width="33" height="22" text_b="2, 2, 29, 18" fold_btn_b="297, 336, 13, 13">
                   <nodes>
-                    <node id="3" text="扩容" x="89" y="299" width="33" height="22" text_b="2, 2, 29, 18" />
-                    <node id="4" text="不同策略" x="64" y="331" width="58" height="22" text_b="2, 2, 54, 18" />
-                    <node id="5" text="replica,sharding" x="20" y="363" width="102" height="22" text_b="2, 2, 98, 18" />
-                    <node id="6" text="接口, 支持类型," x="30" y="395" width="92" height="22" text_b="2, 2, 88, 18" />
+                    <node id="3" text="扩容" x="198" y="283" width="33" height="22" text_b="2, 2, 29, 18" />
+                    <node id="4" text="不同策略" x="173" y="315" width="58" height="22" text_b="2, 2, 54, 18" />
+                    <node id="5" text="replica,sharding" x="129" y="347" width="102" height="22" text_b="2, 2, 98, 18" />
+                    <node id="6" text="接口, 支持类型," x="139" y="379" width="92" height="22" text_b="2, 2, 88, 18" />
                   </nodes>
                   <lines>
-                    <line target="3" begin_side="Left" end_side="Right" begin_rect="189, 347, 46, 22" end_rect="89, 299, 33, 22" />
-                    <line target="4" begin_side="Left" end_side="Right" begin_rect="189, 347, 46, 22" end_rect="64, 331, 58, 22" />
-                    <line target="5" begin_side="Left" end_side="Right" begin_rect="189, 347, 46, 22" end_rect="20, 363, 102, 22" />
-                    <line target="6" begin_side="Left" end_side="Right" begin_rect="189, 347, 46, 22" end_rect="30, 395, 92, 22" />
+                    <line target="3" begin_side="Left" end_side="Right" begin_rect="298, 331, 46, 22" end_rect="198, 283, 33, 22" />
+                    <line target="4" begin_side="Left" end_side="Right" begin_rect="298, 331, 46, 22" end_rect="173, 315, 58, 22" />
+                    <line target="5" begin_side="Left" end_side="Right" begin_rect="298, 331, 46, 22" end_rect="129, 347, 102, 22" />
+                    <line target="6" begin_side="Left" end_side="Right" begin_rect="298, 331, 46, 22" end_rect="139, 379, 92, 22" />
                   </lines>
                 </node>
               </nodes>
               <lines>
-                <line target="9" begin_side="Left" end_side="Right" begin_rect="302, 347, 59, 22" end_rect="202, 347, 33, 22" />
+                <line target="9" begin_side="Left" end_side="Right" begin_rect="411, 331, 59, 22" end_rect="311, 331, 33, 22" />
               </lines>
             </node>
-            <node id="7" text="memcached" x="281" y="475" width="80" height="22" text_b="2, 2, 76, 18" />
-            <node id="8" text="redis" x="624" y="387" width="37" height="22" text_b="2, 2, 33, 18" fold_btn_b="662, 392, 13, 13">
+            <node id="7" text="memcached" x="390" y="475" width="80" height="22" text_b="2, 2, 76, 18" fold_btn_b="376, 480, 13, 13">
               <nodes>
-                <node id="10" text="replica" x="741" y="243" width="48" height="22" text_b="2, 2, 44, 18" fold_btn_b="790, 248, 13, 13">
+                <node id="6" text="特性" x="277" y="475" width="33" height="22" text_b="2, 2, 29, 18" fold_btn_b="263, 480, 13, 13">
                   <nodes>
-                    <node id="11" text="AOF" x="869" y="227" width="34" height="22" text_b="2, 2, 30, 18" />
-                    <node id="12" text="snapshot" x="869" y="259" width="62" height="22" text_b="2, 2, 58, 18" />
+                    <node id="7" text="内存模型: 预分配内存池" x="58" y="459" width="139" height="22" text_b="2, 2, 135, 18" />
+                    <node id="8" text="网络模型: 多线程非阻塞IO复用" x="20" y="491" width="177" height="22" text_b="2, 2, 173, 18" />
                   </nodes>
                   <lines>
-                    <line target="11" begin_side="Right" end_side="Left" begin_rect="741, 243, 61, 22" end_rect="869, 227, 34, 22" />
-                    <line target="12" begin_side="Right" end_side="Left" begin_rect="741, 243, 61, 22" end_rect="869, 259, 62, 22" />
-                  </lines>
-                </node>
-                <node id="13" text="sharding" x="741" y="419" width="60" height="22" text_b="2, 2, 56, 18" fold_btn_b="802, 424, 13, 13">
-                  <nodes>
-                    <node id="23" text="codis" x="881" y="323" width="39" height="22" text_b="2, 2, 35, 18" fold_btn_b="921, 328, 13, 13">
-                      <nodes>
-                        <node id="24" text="问题" x="1000" y="307" width="33" height="22" text_b="2, 2, 29, 18" fold_btn_b="1034, 312, 13, 13">
-                          <nodes>
-                            <node id="28" text="无数据源物理存储支持" x="1113" y="291" width="132" height="22" text_b="2, 2, 128, 18" />
-                            <node id="25" text="go语言编写, 不熟" x="1113" y="323" width="105" height="22" text_b="2, 2, 101, 18" />
-                          </nodes>
-                          <lines>
-                            <line target="28" begin_side="Right" end_side="Left" begin_rect="1000, 307, 46, 22" end_rect="1113, 291, 132, 22" />
-                            <line target="25" begin_side="Right" end_side="Left" begin_rect="1000, 307, 46, 22" end_rect="1113, 323, 105, 22" />
-                          </lines>
-                        </node>
-                        <node id="26" text="server端动态sharding" x="1000" y="355" width="133" height="22" text_b="2, 2, 129, 18" />
-                      </nodes>
-                      <lines>
-                        <line target="24" begin_side="Right" end_side="Left" begin_rect="881, 323, 52, 22" end_rect="1000, 307, 33, 22" />
-                        <line target="26" begin_side="Right" end_side="Left" begin_rect="881, 323, 52, 22" end_rect="1000, 355, 133, 22" />
-                      </lines>
-                    </node>
-                    <node id="15" text="redis-cluster" x="881" y="419" width="82" height="22" text_b="2, 2, 78, 18" fold_btn_b="964, 424, 13, 13">
-                      <nodes>
-                        <node id="27" text="P2P(无中心)" x="1043" y="387" width="76" height="22" text_b="2, 2, 72, 18" />
-                        <node id="19" text="问题" x="1043" y="435" width="33" height="22" text_b="2, 2, 29, 18" fold_btn_b="1077, 440, 13, 13">
-                          <nodes>
-                            <node id="20" text="bug多(比如死锁), 不敢用" x="1156" y="419" width="146" height="22" text_b="2, 2, 142, 18" />
-                            <node id="21" text="缓存操作和集群操作混合在一起,目前所有client API均不能完全支持" x="1156" y="451" width="376" height="22" text_b="2, 2, 372, 18" />
-                          </nodes>
-                          <lines>
-                            <line target="20" begin_side="Right" end_side="Left" begin_rect="1043, 435, 46, 22" end_rect="1156, 419, 146, 22" />
-                            <line target="21" begin_side="Right" end_side="Left" begin_rect="1043, 435, 46, 22" end_rect="1156, 451, 376, 22" />
-                          </lines>
-                        </node>
-                      </nodes>
-                      <lines>
-                        <line target="27" begin_side="Right" end_side="Left" begin_rect="881, 419, 95, 22" end_rect="1043, 387, 76, 22" />
-                        <line target="19" begin_side="Right" end_side="Left" begin_rect="881, 419, 95, 22" end_rect="1043, 435, 33, 22" />
-                      </lines>
-                    </node>
-                    <node id="14" text="twemproxy" x="881" y="515" width="75" height="22" text_b="2, 2, 71, 18" fold_btn_b="957, 520, 13, 13">
-                      <nodes>
-                        <node id="22" text="client静态sharding" x="1036" y="483" width="117" height="22" text_b="2, 2, 113, 18" />
-                        <node id="16" text="问题" x="1036" y="531" width="33" height="22" text_b="2, 2, 29, 18" fold_btn_b="1070, 536, 13, 13">
-                          <nodes>
-                            <node id="17" text="静态(static) sharding, 扩容/收缩很麻烦" x="1149" y="515" width="226" height="22" text_b="2, 2, 222, 18" />
-                            <node id="18" text="无配置管理界面" x="1149" y="547" width="95" height="22" text_b="2, 2, 91, 18" />
-                          </nodes>
-                          <lines>
-                            <line target="17" begin_side="Right" end_side="Left" begin_rect="1036, 531, 46, 22" end_rect="1149, 515, 226, 22" />
-                            <line target="18" begin_side="Right" end_side="Left" begin_rect="1036, 531, 46, 22" end_rect="1149, 547, 95, 22" />
-                          </lines>
-                        </node>
-                      </nodes>
-                      <lines>
-                        <line target="22" begin_side="Right" end_side="Left" begin_rect="881, 515, 88, 22" end_rect="1036, 483, 117, 22" />
-                        <line target="16" begin_side="Right" end_side="Left" begin_rect="881, 515, 88, 22" end_rect="1036, 531, 33, 22" />
-                      </lines>
-                    </node>
-                  </nodes>
-                  <lines>
-                    <line target="23" begin_side="Right" end_side="Left" begin_rect="741, 419, 73, 22" end_rect="881, 323, 39, 22" />
-                    <line target="15" begin_side="Right" end_side="Left" begin_rect="741, 419, 73, 22" end_rect="881, 419, 82, 22" />
-                    <line target="14" begin_side="Right" end_side="Left" begin_rect="741, 419, 73, 22" end_rect="881, 515, 75, 22" />
+                    <line target="7" begin_side="Left" end_side="Right" begin_rect="264, 475, 46, 22" end_rect="58, 459, 139, 22" />
+                    <line target="8" begin_side="Left" end_side="Right" begin_rect="264, 475, 46, 22" end_rect="20, 491, 177, 22" />
                   </lines>
                 </node>
               </nodes>
               <lines>
-                <line target="10" begin_side="Right" end_side="Left" begin_rect="624, 387, 50, 22" end_rect="741, 243, 48, 22" />
-                <line target="13" begin_side="Right" end_side="Left" begin_rect="624, 387, 50, 22" end_rect="741, 419, 60, 22" />
+                <line target="6" begin_side="Left" end_side="Right" begin_rect="377, 475, 93, 22" end_rect="277, 475, 33, 22" />
+              </lines>
+            </node>
+            <node id="8" text="redis" x="733" y="387" width="37" height="22" text_b="2, 2, 33, 18" fold_btn_b="771, 392, 13, 13">
+              <nodes>
+                <node id="13" text="优点" x="850" y="83" width="33" height="22" text_b="2, 2, 29, 18" fold_btn_b="884, 88, 13, 13">
+                  <nodes>
+                    <node id="16" text="支持持久化, 安全性和一致性高" x="963" y="51" width="176" height="22" text_b="2, 2, 172, 18" />
+                    <node id="17" text="数据结构丰富" x="963" y="83" width="83" height="22" text_b="2, 2, 79, 18" />
+                    <node id="14" text="公司内部大量使用, 熟悉" x="963" y="115" width="139" height="22" text_b="2, 2, 135, 18" />
+                  </nodes>
+                  <lines>
+                    <line target="16" begin_side="Right" end_side="Left" begin_rect="850, 83, 46, 22" end_rect="963, 51, 176, 22" />
+                    <line target="17" begin_side="Right" end_side="Left" begin_rect="850, 83, 46, 22" end_rect="963, 83, 83, 22" />
+                    <line target="14" begin_side="Right" end_side="Left" begin_rect="850, 83, 46, 22" end_rect="963, 115, 139, 22" />
+                  </lines>
+                </node>
+                <node id="9" text="特性" x="850" y="195" width="33" height="22" text_b="2, 2, 29, 18" fold_btn_b="884, 200, 13, 13">
+                  <nodes>
+                    <node id="15" text="内存模型: 现场申请" x="963" y="147" width="114" height="22" text_b="2, 2, 110, 18" />
+                    <node id="10" text="网络模型: 单线程IO复用" x="963" y="179" width="140" height="22" text_b="2, 2, 136, 18" />
+                    <node id="11" text="支持和持久化" x="963" y="211" width="83" height="22" text_b="2, 2, 79, 18" />
+                    <node id="12" text="丰富的数据结构" x="963" y="243" width="95" height="22" text_b="2, 2, 91, 18" />
+                  </nodes>
+                  <lines>
+                    <line target="15" begin_side="Right" end_side="Left" begin_rect="850, 195, 46, 22" end_rect="963, 147, 114, 22" />
+                    <line target="10" begin_side="Right" end_side="Left" begin_rect="850, 195, 46, 22" end_rect="963, 179, 140, 22" />
+                    <line target="11" begin_side="Right" end_side="Left" begin_rect="850, 195, 46, 22" end_rect="963, 211, 83, 22" />
+                    <line target="12" begin_side="Right" end_side="Left" begin_rect="850, 195, 46, 22" end_rect="963, 243, 95, 22" />
+                  </lines>
+                </node>
+                <node id="10" text="replica" x="850" y="291" width="48" height="22" text_b="2, 2, 44, 18" fold_btn_b="899, 296, 13, 13">
+                  <nodes>
+                    <node id="11" text="AOF" x="978" y="275" width="34" height="22" text_b="2, 2, 30, 18" />
+                    <node id="12" text="snapshot" x="978" y="307" width="62" height="22" text_b="2, 2, 58, 18" />
+                  </nodes>
+                  <lines>
+                    <line target="11" begin_side="Right" end_side="Left" begin_rect="850, 291, 61, 22" end_rect="978, 275, 34, 22" />
+                    <line target="12" begin_side="Right" end_side="Left" begin_rect="850, 291, 61, 22" end_rect="978, 307, 62, 22" />
+                  </lines>
+                </node>
+                <node id="13" text="sharding" x="850" y="531" width="60" height="22" text_b="2, 2, 56, 18" fold_btn_b="911, 536, 13, 13">
+                  <nodes>
+                    <node id="23" text="codis" x="990" y="435" width="39" height="22" text_b="2, 2, 35, 18" fold_btn_b="1030, 440, 13, 13">
+                      <nodes>
+                        <node id="24" text="问题" x="1109" y="371" width="33" height="22" text_b="2, 2, 29, 18" fold_btn_b="1143, 376, 13, 13">
+                          <nodes>
+                            <node id="1" text="HA(升级, 扩容等数据迁移)不是很方便" x="1222" y="339" width="215" height="22" text_b="2, 2, 211, 18" />
+                            <node id="28" text="无数据源物理存储支持" x="1222" y="371" width="132" height="22" text_b="2, 2, 128, 18" />
+                            <node id="25" text="go语言编写, 不熟" x="1222" y="403" width="105" height="22" text_b="2, 2, 101, 18" />
+                          </nodes>
+                          <lines>
+                            <line target="1" begin_side="Right" end_side="Left" begin_rect="1109, 371, 46, 22" end_rect="1222, 339, 215, 22" />
+                            <line target="28" begin_side="Right" end_side="Left" begin_rect="1109, 371, 46, 22" end_rect="1222, 371, 132, 22" />
+                            <line target="25" begin_side="Right" end_side="Left" begin_rect="1109, 371, 46, 22" end_rect="1222, 403, 105, 22" />
+                          </lines>
+                        </node>
+                        <node id="26" text="server端动态sharding" x="1109" y="483" width="151" height="22" text_b="2, 2, 129, 18" fold_btn_b="1261, 488, 13, 13">
+                          <widgets>
+                            <widget type="NOTES" x="132" y="3" width="16" height="16" align="Right" hyperlink="" display_index="0" padding="0">
+                              <text>主从复制任使用redis的那一套</text>
+                            </widget>
+                          </widgets>
+                          <nodes>
+                            <node id="2" text="codis-server" x="1340" y="435" width="98" height="22" text_b="2, 2, 76, 18">
+                              <widgets>
+                                <widget type="NOTES" x="79" y="3" width="16" height="16" align="Right" hyperlink="" display_index="0" padding="0">
+                                  <text>codis维护的redis版本的一个分支, 添加了对slot 的支持和原子的数据迁移指令等</text>
+                                </widget>
+                              </widgets>
+                            </node>
+                            <node id="3" text="codis-config" x="1340" y="467" width="82" height="22" text_b="2, 2, 78, 18" />
+                            <node id="4" text="coordinator" x="1340" y="499" width="78" height="22" text_b="2, 2, 74, 18" />
+                            <node id="5" text="codis-proxy" x="1340" y="531" width="78" height="22" text_b="2, 2, 74, 18" />
+                          </nodes>
+                          <lines>
+                            <line target="2" begin_side="Right" end_side="Left" begin_rect="1109, 483, 164, 22" end_rect="1340, 435, 98, 22" />
+                            <line target="3" begin_side="Right" end_side="Left" begin_rect="1109, 483, 164, 22" end_rect="1340, 467, 82, 22" />
+                            <line target="4" begin_side="Right" end_side="Left" begin_rect="1109, 483, 164, 22" end_rect="1340, 499, 78, 22" />
+                            <line target="5" begin_side="Right" end_side="Left" begin_rect="1109, 483, 164, 22" end_rect="1340, 531, 78, 22" />
+                          </lines>
+                        </node>
+                      </nodes>
+                      <lines>
+                        <line target="24" begin_side="Right" end_side="Left" begin_rect="990, 435, 52, 22" end_rect="1109, 371, 33, 22" />
+                        <line target="26" begin_side="Right" end_side="Left" begin_rect="990, 435, 52, 22" end_rect="1109, 483, 151, 22" />
+                      </lines>
+                    </node>
+                    <node id="15" text="redis-cluster" x="990" y="595" width="82" height="22" text_b="2, 2, 78, 18" fold_btn_b="1073, 600, 13, 13">
+                      <nodes>
+                        <node id="27" text="P2P(无中心)" x="1152" y="563" width="76" height="22" text_b="2, 2, 72, 18" />
+                        <node id="19" text="问题" x="1152" y="611" width="33" height="22" text_b="2, 2, 29, 18" fold_btn_b="1186, 616, 13, 13">
+                          <nodes>
+                            <node id="20" text="bug多(比如死锁), 不敢用" x="1265" y="595" width="146" height="22" text_b="2, 2, 142, 18" />
+                            <node id="21" text="缓存操作和集群操作混合在一起,目前所有client API均不能完全支持" x="1265" y="627" width="376" height="22" text_b="2, 2, 372, 18" />
+                          </nodes>
+                          <lines>
+                            <line target="20" begin_side="Right" end_side="Left" begin_rect="1152, 611, 46, 22" end_rect="1265, 595, 146, 22" />
+                            <line target="21" begin_side="Right" end_side="Left" begin_rect="1152, 611, 46, 22" end_rect="1265, 627, 376, 22" />
+                          </lines>
+                        </node>
+                      </nodes>
+                      <lines>
+                        <line target="27" begin_side="Right" end_side="Left" begin_rect="990, 595, 95, 22" end_rect="1152, 563, 76, 22" />
+                        <line target="19" begin_side="Right" end_side="Left" begin_rect="990, 595, 95, 22" end_rect="1152, 611, 33, 22" />
+                      </lines>
+                    </node>
+                    <node id="14" text="twemproxy" x="990" y="691" width="75" height="22" text_b="2, 2, 71, 18" fold_btn_b="1066, 696, 13, 13">
+                      <nodes>
+                        <node id="22" text="client静态sharding" x="1145" y="659" width="117" height="22" text_b="2, 2, 113, 18" />
+                        <node id="16" text="问题" x="1145" y="707" width="33" height="22" text_b="2, 2, 29, 18" fold_btn_b="1179, 712, 13, 13">
+                          <nodes>
+                            <node id="17" text="静态(static) sharding, 扩容/收缩很麻烦" x="1258" y="691" width="226" height="22" text_b="2, 2, 222, 18" />
+                            <node id="18" text="无配置管理界面" x="1258" y="723" width="95" height="22" text_b="2, 2, 91, 18" />
+                          </nodes>
+                          <lines>
+                            <line target="17" begin_side="Right" end_side="Left" begin_rect="1145, 707, 46, 22" end_rect="1258, 691, 226, 22" />
+                            <line target="18" begin_side="Right" end_side="Left" begin_rect="1145, 707, 46, 22" end_rect="1258, 723, 95, 22" />
+                          </lines>
+                        </node>
+                      </nodes>
+                      <lines>
+                        <line target="22" begin_side="Right" end_side="Left" begin_rect="990, 691, 88, 22" end_rect="1145, 659, 117, 22" />
+                        <line target="16" begin_side="Right" end_side="Left" begin_rect="990, 691, 88, 22" end_rect="1145, 707, 33, 22" />
+                      </lines>
+                    </node>
+                  </nodes>
+                  <lines>
+                    <line target="23" begin_side="Right" end_side="Left" begin_rect="850, 531, 73, 22" end_rect="990, 435, 39, 22" />
+                    <line target="15" begin_side="Right" end_side="Left" begin_rect="850, 531, 73, 22" end_rect="990, 595, 82, 22" />
+                    <line target="14" begin_side="Right" end_side="Left" begin_rect="850, 531, 73, 22" end_rect="990, 691, 75, 22" />
+                  </lines>
+                </node>
+              </nodes>
+              <lines>
+                <line target="13" begin_side="Right" end_side="Left" begin_rect="733, 387, 50, 22" end_rect="850, 83, 33, 22" />
+                <line target="9" begin_side="Right" end_side="Left" begin_rect="733, 387, 50, 22" end_rect="850, 195, 33, 22" />
+                <line target="10" begin_side="Right" end_side="Left" begin_rect="733, 387, 50, 22" end_rect="850, 291, 48, 22" />
+                <line target="13" begin_side="Right" end_side="Left" begin_rect="733, 387, 50, 22" end_rect="850, 531, 60, 22" />
               </lines>
             </node>
           </nodes>
           <lines>
-            <line target="2" begin_side="Left" end_side="Right" begin_rect="441, 377, 103, 42" end_rect="315, 347, 46, 22" />
-            <line target="7" begin_side="Left" end_side="Right" begin_rect="441, 377, 103, 42" end_rect="281, 475, 80, 22" />
-            <line target="8" begin_side="Right" end_side="Left" begin_rect="441, 377, 103, 42" end_rect="624, 387, 37, 22" />
+            <line target="2" begin_side="Left" end_side="Right" begin_rect="550, 377, 103, 42" end_rect="424, 331, 46, 22" />
+            <line target="7" begin_side="Left" end_side="Right" begin_rect="550, 377, 103, 42" end_rect="390, 475, 80, 22" />
+            <line target="8" begin_side="Right" end_side="Left" begin_rect="550, 377, 103, 42" end_rect="733, 387, 37, 22" />
           </lines>
         </node>
       </nodes>

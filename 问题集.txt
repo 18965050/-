@@ -1,0 +1,25 @@
+codies autorebalance方案:
+(1) 每个redis节点可依据配置不同分配不同的slot num
+(2) (slotnum * memAlloc)*totalSlot/sum(slotnum * memAlloc)
+https://github.com/wandoulabs/codis/blob/master/cmd/cconfig/rebalancer.go#L104
+
+
+(1) 一致性哈希算法和普通hash求余算法(codes使用后者--预分配hash求余)
+一致性hash:
+    优点: 单向性, 数据迁移少
+    缺点: 但节点删除或增加时, 会导致数据分布不均匀. 一致性hash提出了平衡性的概念, 即每个真实节点可以有多个虚拟节点(复制个数), 虚拟节点也计算hash,对对应
+          到一个真实节点上, 数据通过虚拟节点存储到对应的真实节点. 这样能比较好的解决数据分配的问题.
+
+
+
+(2)预分配槽数(slot)hash求余: hash(key)%slot
+预先分配一定的slot, 根据节点数计算每个节点的hash范围. 当节点变化时, 重新计算每个节点对应的slot范围, 并做相应数据的迁移
+    优点: 数据相对均衡, 实现简单
+    缺点: (a)数据迁移量大
+          (b)当节点数>slot数时, 会导致有些节点分配不到slot
+
+
+代理跳转还是复制:
+(1) 缓存复制会碰到很多麻烦的问题:　比如各节点数据一致性(CAP中的C),复制节点挂掉等, 性能考虑等等. 另外, 我们已经用数据源存储数据了,是否再必要缓存点间的相互复制
+ (2) redis已经提供了复制功能(snapshot, aof)
+ 代理就简单多了,
