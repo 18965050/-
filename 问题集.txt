@@ -69,7 +69,7 @@ server-proxy启动流程: server-proxy必须是无状态的
 (3) server-watch被触发,
     判断当前server-proxy,判断server的status是否为INIT.
     是, 等待直到status为PRE-MIGRATING
-    否, 判断当前节点节点状态:
+    否, 判断当前节点状态:
         PRE-MIGRATING,STARTED: 判断是否存在MIGRATING的其他server-proxy节点
             是: 如果为PRE-MIGRATING直接设置server-proxy STATUS=STARTED, 否则什么也不做
             否: 判断是否有slot的status=OFFLINE:
