@@ -1,8 +1,0 @@
-离职系列文章之redis cluster使用经验(http://yangzhe1991.org/blog/2015/04/redis-cluster/)
-Codis作者黄东旭细说分布式Redis架构设计和踩过的那些坑们 (http://my.oschina.net/u/658658/blog/500499)
-OSC 大咖说 | 专访 PingCAP 联合创始人、CTO 黄东旭：写代码、玩开源，体会造物的成就感 (http://www.oschina.net/question/2652078_2182038)
-每天进步一点点——五分钟理解一致性哈希算法(consistent hashing) (http://blog.csdn.net/cywosp/article/details/23397179/)
-RebornDB: the Next Generation Distributed Key-Value Store(https://docs.google.com/document/d/1hJXa0LjMaGYHgL3PeQQu3QMrstxof241OVxbdDKvSbY/edit?pref=2&pli=1#heading=h.hg5l9hsgtty5)
-
-github codis 仓储(https://github.com/CodisLabs/codis)
-codis下代产品reborndb (https://github.com/reborndb)
